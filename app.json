@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Florassence",
+    "slug": "florassence",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F7F6F3"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.florassence.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Florassence uses your camera so you can take a new profile photo.",
+        "NSPhotoLibraryUsageDescription": "Florassence uses your photo library so you can choose a profile photo.",
+        "NSLocationWhenInUseUsageDescription": "Florassence can optionally show your location on your profile. This is never required."
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F7F6F3"
+      },
+      "package": "com.florassence.app",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "florassence",
+              "host": "app"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
