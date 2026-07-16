@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Expo files
+.expo/
+.expo-shared/
+
+# Environment files
+.env
+
+# Build files
+dist/
+build/
+
+# OS files
+.DS_Store
